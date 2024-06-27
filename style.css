@@ -1,0 +1,544 @@
+/* styles.css */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0 !important;
+    font-family: Arial, sans-serif;
+    background-color: rgb(244 242 238) !important;
+}
+
+p {
+    margin: 0 !important;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 0 !important;
+    height: 53px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.navbar .container {
+    padding: 0 2px !important;
+}
+
+.navbar-left {
+    display: flex;
+    align-items: center;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    background-color: #eef3f8;
+    border-radius: 3px;
+    padding: 5px 17px;
+    margin-left: 4px;
+    width: 280px;
+}
+
+.fa-search {
+    margin-top: 2px;
+}
+
+.search-bar i {
+    color: #000;
+    font-size: 13.5px;
+}
+
+.search-bar input {
+    border: none;
+    background: none;
+    outline: none;
+    padding-left: 10px;
+    color: #333;
+    width: 100%;
+}
+
+.search-bar input::placeholder {
+    font-size: 14px;
+}
+
+.navbar-right {
+    display: flex;
+    align-items: center;
+}
+
+.nav-link {
+    display: flex !important;
+    flex-direction: column;
+    align-items: center;
+    color: #666 !important;
+    text-decoration: none;
+    font-size: 12px !important;
+    min-width: 80px;
+    min-height: 53px;
+    justify-content: center;
+}
+
+.nav-link i {
+    font-size: 20px;
+}
+
+.nav-link .fa-caret-down {
+    font-size: 16px;
+}
+
+.nav-link span {
+    margin-left: 5px;
+}
+
+.nav-link img {
+    width: 24px;
+    height: 24px;
+}
+
+.nav-link img {
+    border-radius: 50%;
+}
+
+.nav-link.premium span {
+    color: #c66;
+    text-decoration: underline;
+    text-align: center;
+}
+
+.nav-link.premium span br {
+    display: block;
+}
+
+.business-br {
+    border-left: 1px solid rgb(140 140 140/.2) !important;
+    padding-left: 10px !important;
+}
+
+.nav-link .premium-membership {
+    min-width: 125px;
+    text-align: center;
+}
+
+.tabs .nav-tabs {
+    background-color: #fff;
+    box-shadow: 0px 0px 0px 1px rgb(140 140 140 / .2);
+    border-radius: 0 0 10px 10px;
+    padding-left: 5px;
+}
+
+.nav-tabs .nav-link.active,
+.nav-link:hover,
+.naav-link:focus {
+    border: 0 !important;
+    background-color: unset !important;
+    border-bottom: 2px solid #01754f !important;
+    color: #01754f !important;
+}
+
+.nav-tabs .nav-link {
+    color: rgb(0 0 0/.6);
+    font-weight: 700;
+    font-size: 15px !important;
+    line-height: 1.5;
+}
+
+.tabs .content {
+    background-color: #ffffff;
+    border-radius: 10px;
+    position: relative;
+    box-shadow: 0px 0px 0px 1px rgb(140 140 140 / .2);
+    margin-top: 15px;
+}
+
+.tab-content {
+    padding: 25px;
+}
+
+.show-more {
+    border-top: 1px solid rgb(140 140 140/.2);
+    padding: 16px 0;
+    font-size: 16px;
+}
+
+.show-more a {
+    color: rgb(0 0 0/.4);
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.show-more a i {
+    margin-left: 10px;
+}
+
+.tab-content h2 {
+    font-size: 24px;
+    color: #000;
+}
+
+.tab-content p {
+    font-size: 16px;
+    color: #000;
+}
+
+.posts {
+    background-color: #ffffff;
+    border-radius: 10px;
+    position: relative;
+    box-shadow: 0px 0px 0px 1px rgb(140 140 140 / .2);
+    margin-top: 15px;
+}
+
+.post-item {
+    padding: 25px;
+}
+
+.posts h2 {
+    font-size: 24px;
+    color: #000;
+}
+
+.posts .post-data {
+    width: 100%;
+    height: 350px;
+    text-align: center;
+    background-color: #d9dfec;
+    overflow: hidden;
+}
+
+
+/*----------------main-body------------------------------*/
+
+.contentlayout {
+    margin-top: 25px;
+}
+
+.contentlayout .profile {
+    background-color: #ffffff;
+    border-radius: 10px 10px 0 0;
+    position: relative;
+    box-shadow: 0px 0px 0px 1px rgb(140 140 140/.2);
+}
+
+.contentlayout .profile .banner img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px 10px 0 0;
+}
+
+.contentlayout .profile .information {
+    padding: 25px;
+}
+
+.contentlayout .profile .information .logo {
+    position: absolute;
+    top: 75px;
+    left: 25px;
+}
+
+.contentlayout .profile .information .logo img {
+    width: 128px;
+    height: 128px;
+    border: 5px solid #fff;
+}
+
+.contentlayout .profile .information .compnay-name {
+    margin-top: 40px;
+}
+
+.contentlayout .profile .information .compnay-name h1 {
+    font-size: 2rem;
+}
+
+.contentlayout .profile .information .tagline p {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.contentlayout .profile .information .info-list p,
+p a {
+    font-size: 14px;
+    color: rgb(0 0 0/.6);
+    text-decoration: none;
+}
+
+.contentlayout .profile .information .follower-list {
+    display: flex;
+}
+
+.contentlayout .profile .information .follower-list div {
+    margin: 16px 0 5px 0;
+}
+
+.contentlayout .profile .information .follower-list img {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+.contentlayout .profile .information .btn-card {
+    padding-top: 15px;
+}
+
+.contentlayout .profile .information .btn-card .btn {
+    min-width: 135px;
+    max-height: 32px;
+    border-radius: 50px;
+    padding: 1px 10px 3px 10px !important;
+}
+
+.contentlayout .profile .information .btn-card .btn i {
+    font-size: 12px;
+    margin: 0 10px
+}
+
+.contentlayout .profile .information .btn-card .btn.btn-primary {
+    background-color: #0a66c2;
+}
+
+.contentlayout .profile .information .btn-card .btn.btn-outline-primary {
+    border: 2px solid #0a66c2 !important;
+    margin-left: 5px;
+}
+
+.contentlayout .profile .information .btn-card .btn.btn-outline-primary:hover {
+    background-color: rgb(55 143 233/.1);
+    color: #004182;
+    border-color: #004182;
+}
+
+.contentlayout .profile .information .btn-card .ellps {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    border: 1px solid rgb(0 0 0/.75);
+    background-color: #fff;
+    margin-left: 5px;
+    position: relative;
+    top: 2px;
+}
+
+.contentlayout .profile .information .btn-card .ellps a {
+    color: rgb(0 0 0/.75);
+}
+
+
+/*-----------------------Side sections----------------------*/
+
+.aside-components>div {
+    background-color: #fff;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    box-shadow: 0px 0px 0px 1px rgb(140 140 140/.2);
+    padding: 16px;
+    position: relative;
+}
+
+.aside-components .profile-pic {
+    width: 40px;
+    min-width: 40px;
+    height: 40px;
+    min-height: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 10px;
+}
+
+.aside-components .profile-pic img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.aside-components .message {
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+.aside-components .promoted {
+    background-color: #f0f0f0;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    color: #555;
+    margin-left: auto;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
+
+.aside-components .job-listing {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.aside-components .job-listing .icon img {
+    width: 32px;
+    height: 32px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    margin-right: 5px;
+}
+
+.aside-components .explorer {
+    display: flex;
+    margin-top: 18px;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.aside-components .job-listing .job-title {
+    font-size: 14px;
+    font-weight: 600;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+}
+
+.aside-components .job-listing .job-location {
+    font-size: 12px;
+    color: #777;
+    font-weight: 400;
+}
+
+.aside-components .button {
+    box-shadow: 0 0 0 1px #0a66c2;
+    background-color: rgba(0, 0, 0, 0);
+    color: #0a66c2;
+    padding: 5px 20px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+    width: 100%;
+}
+
+.aside-components .button:hover {
+    background-color: rgb(55 143 233/.1);
+}
+
+.second-component h3 {
+    font-size: 20px;
+    margin-bottom: 0;
+}
+
+.second-component .job-listing {
+    padding: 20px 0 0 0;
+    align-items: flex-start;
+}
+
+.second-component .job-listing .icon img {
+    margin-right: 10px;
+    width: 48px !important;
+    height: 48px !important;
+}
+
+.chnage-color {
+    color: #000 !important;
+}
+
+.second-component .button {
+    width: auto;
+    margin-top: 10px;
+    box-shadow: 0 0 0 1px rgb(0 0 0/.75);
+    color: rgb(0 0 0/.75);
+}
+
+.second-component .button i {
+    margin-right: 5px;
+}
+
+.third-component h3 {
+    font-size: 20px;
+    margin-bottom: 0;
+}
+
+.third-component>p {
+    font-size: 12px;
+    color: #777;
+    font-weight: 400;
+}
+
+.third-component .job-listing {
+    padding: 15px 0;
+    margin-bottom: 0;
+    align-items: flex-start;
+    border-bottom: 1px solid rgb(140 140 140/.2);
+}
+
+.third-component .job-listing .icon img {
+    margin-right: 10px;
+    width: 48px !important;
+    height: 48px !important;
+}
+
+.bb-none {
+    border-bottom: none !important;
+}
+
+@media screen and (max-width:767px) {
+    .search-bar input {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .search-bar input {
+        display: none;
+    }
+    .search-bar {
+        padding: 0;
+        background-color: unset;
+        width: 15px;
+    }
+    .nav-link {
+        min-width: 48px;
+    }
+    .nav-link span {
+        display: none;
+    }
+    .navbar-right .nav-link:nth-last-child(3),
+    .navbar-right .nav-link:nth-last-child(2),
+    .navbar-right .nav-link:nth-last-child(1) {
+        display: none !important;
+    }
+    .search-bar i {
+        font-size: 22px;
+        margin-left: 20px;
+    }
+    .navbar .container {
+        padding: 0 calc(var(--bs-gutter-x) * .5) !important;
+    }
+    .contentlayout .container {
+        padding: 0 !important;
+    }
+    .banner {
+        height: 134px;
+    }
+    .contentlayout .profile .information .logo img {
+        width: 88px;
+        height: 88px;
+    }
+    .contentlayout .profile .information .logo {
+        top: 85px;
+    }
+    .contentlayout .profile .information .btn-card .btn {
+        min-width: auto;
+    }
+    .posts .post-data {
+        margin-bottom: 10px
+    }
+    .first-section {
+        margin-top: 10px;
+    }
+}
